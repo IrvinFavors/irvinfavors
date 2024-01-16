@@ -1,7 +1,7 @@
 ### Hi there 👋 I'm Irvin
 [Portfolio Website](https://www.irvinfavors.tech/)
 
-<p>I'm a Computer Science Major, concentrating in Cybersecurity & AI. <b/> During Summer of 2023, I interned for Google under the Avid Ads Infrastructure Team</p>
+<p>I'm a Computer Science Major, concentrating in Cybersecurity & AI. <b></b> During Summer of 2023, I interned for Google under the Avid Ads Infrastructure Team</p>
 <!--
 **IrvinFavors/irvinfavors** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
