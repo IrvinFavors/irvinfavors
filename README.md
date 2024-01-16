@@ -1,5 +1,6 @@
 ### Hi there 👋 I'm Irvin
-[Portfolio Website](https://www.irvinfavors.tech/)
+[Portfolio Website](https://www.irvinfavors.tech/) 
+[Resume](https://www.irvinfavors.tech/Irvin_Favors_Jr_Resume.pdf)
 
 <p>I'm a Computer Science Major, concentrating in Cybersecurity & AI.<br /> During Summer of 2023, I interned for Google under the Avid Ads Infrastructure Team</p>
 
