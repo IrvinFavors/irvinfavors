@@ -58,18 +58,6 @@ const Portfolio = () => {
           <h2 className="">Overview</h2>
           <p>
             <br />
-            The goal of this project was to enhance the histogram equalization
-            method for image processing. Histogram equalization is a technique
-            used in digital image processing to improve the contrast in images.
-            The primary objective was to optimize this method to more
-            effectively distribute the intensity levels of an image, thereby
-            utilizing the full spectrum of available intensity values. This
-            improvement is especially beneficial in cases where images have
-            areas of low contrast, allowing for the amplification of details in
-            both overexposed and underexposed photographs. The refined histogram
-            equalization method also contributes to clearer imaging in medical
-            applications, such as providing enhanced visualization of bone
-            structures in X-ray images.
           </p>
 
           <div className="flex items-center space-x-2">
@@ -81,12 +69,13 @@ const Portfolio = () => {
             <div className="">
               <GitHubCodePreview
                 repoUrl={"https://github.com/IrvinFavors/IrvinFavors"}
-                filePath={"portfolio_nestledpreview.tsx"}
+                filePath={"portfolio_previewcode.tsx"}
+                language="typescript"
               />
             </div>
           )}
         </div>
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
+        <div className="col-span-4 md:col-span-1 md:max-h-[230px] shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
