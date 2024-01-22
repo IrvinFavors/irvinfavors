@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "../app/globals.css";
+import portfolioImg from "../../public/assets/projects/portfolio.png";
 import Image from "next/image";
-import histogramImg from "../../public/assets/projects/histogram.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import GitHubCodePreview from "@/components/GitHubCodePreview";
-import { FaExternalLinkAlt } from "react-icons/fa";
 
-const Histogram = () => {
+const Portfolio = () => {
   const [showCodePreview, setShowCodePreview] = useState(false);
 
   useEffect(() => {
@@ -46,12 +45,12 @@ const Histogram = () => {
           className="absolute z-1"
           fill
           style={{ objectFit: "cover" }}
-          src={histogramImg}
+          src={portfolioImg}
           alt=""
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] righ-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Histogram Equalization </h2>
-          <h3>C / OpenMP </h3>
+          <h2 className="py-2">Portfolio Website</h2>
+          <h3>NextJS | JavaScript | TypeScript</h3>
         </div>
       </div>
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
@@ -74,19 +73,6 @@ const Histogram = () => {
           </p>
 
           <div className="flex items-center space-x-2">
-            <a
-              href="https://github.com/IrvinFavors/omp_histogram_equalization"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                style={{ maxWidth: "150px" }}
-                className="bg-gray-700 dark:bg-slate-200 text-white dark:text-black p-2.5 px-6 rounded-lg text-md font-semibold 
-            border-2 border-solid border-transparent flex items-center z-10 m-4"
-              >
-                Full Code <FaExternalLinkAlt className="ml-2" />
-              </div>
-            </a>
             {showCodePreview && (
               <p className="text-xl font-bold">Code Preview :</p>
             )}
@@ -94,24 +80,31 @@ const Histogram = () => {
           {showCodePreview && (
             <div className="">
               <GitHubCodePreview
-                repoUrl={
-                  "https://github.com/IrvinFavors/omp_histogram_equalization"
-                }
-                filePath={"omp_histogram_equalization.c"}
+                repoUrl={"https://github.com/IrvinFavors/IrvinFavors"}
+                filePath={"portfolio_nestledpreview.tsx"}
               />
             </div>
           )}
         </div>
-        <div className="col-span-4 md:col-span-1 md:max-h-[200px] shadow-xl shadow-gray-400 rounded-xl p-4">
+        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" />C
+                <RiRadioButtonFill className="pr-1" />
+                NextJS
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                OpenMP
+                TypeScript
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" />
+                Vercel
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" />
+                CSS
               </p>
             </div>
           </div>
@@ -124,4 +117,4 @@ const Histogram = () => {
   );
 };
 
-export default Histogram;
+export default Portfolio;
